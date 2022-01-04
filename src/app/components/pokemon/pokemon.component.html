@@ -1,0 +1,46 @@
+<div  fxLayout="row"  fxLayoutAlign="space-around center" fxLayoutGap="1px" fxLayout.sm="column">
+    <div class="title">Pokemon</div>
+</div>
+<div fxLayout="row wrap" fxLayout.sm="column">
+    <div fxFlex.lg="33.333%" fxFlex.md="66.667%" fxFlex.lt-sm="100%" >
+      
+    </div>
+    <div fxFlex.lg="33.333%" fxFlex.md="66.667%" fxFlex.lt-sm="100%">
+        <mat-card class="card">
+
+            <mat-card-header>
+                <img mat-card-avatar class="header-image" src="{{pokemonIm}}">
+                <mat-card-title>{{pokemon.name}}</mat-card-title>
+                <mat-card-subtitle>Número {{pokemon.id}}</mat-card-subtitle>
+            </mat-card-header>
+
+            <img mat-card-image src="{{pokemonIm}}" alt="pokemon">
+
+            <mat-card-content>
+                <mat-chip-list>
+                    <mat-chip color="primary"> Base de Experencia: {{pokemon.base_experience}}</mat-chip>
+                    <mat-chip color="primary">Altura: {{pokemon.height}}</mat-chip>
+                    <mat-chip color="primary">Peso: {{pokemon.weight}}</mat-chip>
+                    <mat-chip color="primary">Tipo: {{pokemonType}}</mat-chip>
+
+                </mat-chip-list>
+
+            </mat-card-content>
+            <div flex fxLayout="row"  fxLayout.sm="column">
+                <div fxFlex.lg="33.333%" fxFlex.md="66.667%" fxFlex.lt-sm="100%">
+                    <button mat-flat-button color="primary" (click)="home()">Regresar</button>
+                </div>
+                <div fxFlex.lg="33.333%" fxFlex.md="66.667%" fxFlex.lt-sm="100%">
+                    
+                </div>
+                <div fxFlex.lg="33.333%" fxFlex.md="66.667%" fxFlex.lt-sm="100%">
+                    <button mat-flat-button color="primary"(click)="sentInfo()">Captura</button>
+                </div>
+
+            </div>
+        </mat-card>
+    </div>
+    <div fxFlex.lg="33.333%" fxFlex.md="66.667%" fxFlex.lt-sm="100%">
+       
+     </div>
+</div>

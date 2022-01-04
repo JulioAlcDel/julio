@@ -1,0 +1,10 @@
+.card {
+    max-width: 500px;
+    margin: 4px
+  }
+  .title {
+    font-size: 40px;
+    color: rgb(63, 81, 181);
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
